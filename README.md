@@ -18,6 +18,11 @@ This is a Heroku Buildpack you can add to your heroku deployments that will noti
 1. Add this buildpack: `heroku buildpacks:set https://github.com/evantahler/heroku-buildpack-notify-slack-deploy.git` (or add it via the heroku dashboard if you have multiple buildpacks)
 
 ## Optional - Github Commit Information
+Mention users
+
+add mentions with env SLACK_BOT_MENTION variable
+
+## Optional - Github Commit Information
 
 By default, there's very little information about the commit that we can get from Heroku. However, we can curl the Github API and try to learn more about the commit. If you set the following additional environment variables, we can load the commit information, committer, and URL from Github:
 
